@@ -562,8 +562,6 @@ impl Debug for Span {
     }
 }
 
-unsafe impl Send for Span {}
-
 /// A single token or a delimited sequence of token trees (e.g. `[1, (), ..]`).
 #[derive(Clone)]
 pub enum TokenTree {
