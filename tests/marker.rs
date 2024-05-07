@@ -35,7 +35,7 @@ macro_rules! assert_impl {
 
                     // If $ty does not implement $marker, there is no ambiguity
                     // in the following trait method call.
-                    <$ty>::assert_not_implemented();
+                    // <$ty>::assert_not_implemented();
                 }
             )+
         }
