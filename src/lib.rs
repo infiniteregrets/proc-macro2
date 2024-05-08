@@ -390,21 +390,21 @@ impl Debug for SourceFile {
 #[derive(Copy, Clone)]
 pub struct Span {
     inner: imp::Span,
-    _marker: ProcMacroAutoTraits,
+    // _marker: ProcMacroAutoTraits,
 }
 
 impl Span {
     fn _new(inner: imp::Span) -> Self {
         Span {
             inner,
-            _marker: MARKER,
+            // _marker: MARKER,
         }
     }
 
     fn _new_fallback(inner: fallback::Span) -> Self {
         Span {
             inner: inner.into(),
-            _marker: MARKER,
+            // _marker: MARKER,
         }
     }
 
